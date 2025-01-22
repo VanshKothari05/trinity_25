@@ -1,0 +1,345 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav {
+	position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%; /* Set width to 100% for full-width navbar */
+            background-color: #0000009c;
+            padding: 5px 0; /* Adjust padding for horizontal layout */
+            color: white;
+            z-index: 10;
+}
+
+.sports{
+	background-image: linear-gradient(rgb(31, 26, 26), #404023);
+	margin-top: -2.2%;
+	
+}
+
+.sportsHeading{
+	color: aliceblue;
+	padding-top: 1%;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/*
+	navbar overflows outside 
+	this issue needs to be fixed
+*/
+
+/* temp fix */
+#responsive-navbar-nav {
+	/* overflow-x: scroll; */
+}
+/* temp fix */
+
+
+.image img {
+	object-fit: cover;
+}
+
+.logo {
+	opacity: 150%;
+	margin-top: 10px;
+	width: 30%;
+	cursor: pointer;
+}
+
+.container {
+	margin: auto;
+	width: 80%;
+}
+
+.nav-links li {
+	
+	display: flex; /* Use flexbox for horizontal layout */
+	justify-content: center; /* Center the links horizontally */
+	align-items: center; /* Vertically center the links */
+	font-family: "Anek Latin";
+	font-size: 23px;
+}
+
+.nav-links li a {
+	color: white;
+	text-decoration: none;
+	padding: 15px 40px;
+	margin: 0 10px; /* Add spacing between links */
+	transition:  0.3s ease;
+}
+
+
+.active {
+	background-color: #032c3fb9;
+}
+
+.img {
+	width: 100%;
+	margin-top: -150px;
+	/* object-fit: cover; */
+	opacity: 0.93;
+	margin-bottom: -130px;
+}
+
+.img-text {
+	position: absolute;
+	z-index: 10;
+	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -40%);
+	font-size: 1.85rem;
+	text-align: center;
+}
+
+.socials {
+	color: white;
+
+	background-color: rgba(124, 122, 40, 0.6);
+	right: 0px;
+	border-radius: 10px 0 0 10px;
+	width: max-content;
+	position: fixed;
+	padding: 10px 10px;
+	top: 70vh;
+	line-height: 35px;
+
+	z-index: 100;
+}
+
+.icon a:hover {
+	color: rgb(52, 110, 168);
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-weight: 600;
+	font-size: 3rem;
+	background-color: black;
+	color: white;
+	padding: 3% 0;
+}
+
+.details div p {
+	font-weight: 900;
+	font-size: 1.5rem;
+}
+
+.details-styling {
+	width: 8rem;
+}
+
+.numbers {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	font-size: 1.7rem;
+	flex-wrap: wrap;
+}
+
+.numbers div p {
+	font-size: 0.7rem;
+	font-weight: 200;
+}
+
+/* CSS for sponsors page */
+
+.sponsor-bg {
+	object-fit: cover;
+	width: 100%;
+	/* position: absolute; */
+	position: fixed;
+	z-index: -10;
+}
+
+.sponsor-background {
+	background-image: linear-gradient(rgb(0, 0, 0), #063138), url('../src/images/8.png');
+	background-repeat: no-repeat;
+	min-width: 100%;
+	min-height: 100%;
+	text-align: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+}
+/*
+.sponsor-buttons {
+	position: fixed;
+	right: -19px;
+	margin-top: 1.7%;
+	display: flex;
+	flex-direction: column;
+}
+.sponsorSideBtns {
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 20px 15px;
+	margin-bottom: 40px;
+	border-radius: 0 0 20px 20px;
+	cursor: pointer;
+	transform: rotate(90deg);
+	opacity: 0.9;
+}
+
+
+.sponsorSideBtns:hover {
+	color: white;
+}
+
+*/
+.sponsors-name {
+	padding-top: 5rem;
+	font-weight: bolder;
+}
+
+.sponsorContainer {
+	text-align: center;
+	z-index: 100;
+}
+
+.sponsorDivision {
+	padding-top: 50px;
+	margin-top: -47%;
+	margin-bottom: -47%;
+	width: 80%;
+}
+
+.sponsorType {
+	font-weight: bolder;
+	color: white;
+	margin: 8px 0;
+}
+
+.contains-title {
+	border: 4px solid white;
+	width: 20%;
+	padding: 1% 0;
+	margin: auto;
+	border-radius: 8px;
+}
+
+.sponsor-image-card {
+	width: 300px;
+	margin: 40px 60px;
+	height: fit-content;
+	display: inline-block;
+	border: 6px solid white;
+	box-shadow: 0px 0px 10px rgb(234, 223, 223);
+	overflow: hidden;
+	position: relative;
+	object-fit: cover;
+}
+
+.background {
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+}
+
+.onHover {
+	position: absolute;
+	bottom: 0;
+	background-color: black;
+	width: 100%;
+}
+
+.sponsers-img {
+	width: 300px;
+	height: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+	/* * {
+		width: auto;
+	} */
+
+	.nav-content {
+		height: 60px;
+	}
+
+	.logo {
+		position: fixed;
+		top: 8%;
+		z-index: 1000;
+	}
+
+	.nav {
+		position: relative;
+	}
+
+	.img {
+		width: 110%;
+		margin-top: 0;
+		margin-bottom: -20px;
+	}
+
+	.toggle {
+		position: fixed;
+		right: 10%;
+		top: 25px;
+	}
+
+	.image img {
+		width: 80%;
+		object-fit: scale-down;
+		/* height: 45%; */
+	}
+
+	.sponsorDivision {
+		margin-top: -100%;
+		margin-bottom: -100%;
+		width: 180%;
+		margin-left: -40%;
+	}
+
+	.upper {
+		margin-left: -38% !important;
+	}
+
+	.sponsorSideBtns {
+		margin-top: 10px;
+		margin-bottom: 20px;
+		font-size: small;
+	}
+
+	.sponsor-image-card {
+		width: 200px;
+		margin: 40px 60px;
+		height: fit-content;
+	}
+
+	.contains-title {
+		border: 4px solid white;
+		width: 50%;
+		padding: 1% 0;
+		margin: auto;
+		border-radius: 8px;
+	}
+
+	.sponsors-name {
+		padding-top: 4rem;
+		font-weight: bold;
+	}
+
+	/* .numbers {
+		border: red 6px solid;
+		display: flex;
+		f;e
+	}
+
+	.details-styling {
+		width: 20% !important;
+	} */
+	.sponsers-img {
+		width: 300px;
+		height: 300px;
+	}
+}

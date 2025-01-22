@@ -1,0 +1,174 @@
+:root {
+    --themeColor: rgb(255, 255, 255);
+}
+
+.gallery-main-container {
+    background-image: linear-gradient(rgb(0, 0, 0), #063138);
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0 2%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    position: relative;
+    text-align: center;
+
+}
+
+.gallery-main-container h1 {
+    color: var(--themeColor);
+    display: block;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+
+
+
+.photos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.photo {
+    width: 25rem;
+    height: 13rem;
+    border: 3px solid var(--themeColor);
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.video-section-title {
+    color: var(--themeColor);
+    margin: 2rem 0 10px 0;
+}
+
+.yt-frames-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+}
+
+.yt-frames-container h6 {
+
+    color: var(--themeColor);
+}
+
+.yt-frames-container-iframe {
+    width: 45%;
+    height: 330px;
+    margin: 1rem;
+
+}
+
+.yt-frames-container iframe {
+    border: 5px solid var(--themeColor);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.carousal-outer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousal-container {
+    width: 31rem;
+    margin-left: 1rem;
+}
+
+
+
+.Carousel-item {
+    background-color: rgb(0, 0, 0);
+    width: 30rem;
+    height: 15rem;
+    border-radius: 10px;
+    box-shadow: 5px black;
+    border: 5px solid var(--themeColor);
+    margin: 10px;
+}
+
+.Carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .rec-arrow-right {
+        display: none;
+
+    }
+
+    .rec-arrow-left {
+        display: none;
+    }
+
+    .Carousel-item {
+        background-color: gray;
+        width: 90%;
+        height: 10rem;
+        border-radius: 10px;
+        border: 5px solid var(--themeColor);
+    }
+
+    .Carousel-item img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .photo {
+        width: 85%;
+        height: 10rem;
+        border-radius: 10px;
+    }
+
+    .photo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .video-section-title {
+        margin-bottom: -50px;
+    }
+
+    .yt-frames-container {
+        width: 100%;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+
+    }
+
+    .yt-frames-container h6 {
+
+        color: var(--themeColor);
+    }
+
+    .yt-frames-container-iframe {
+        display: block;
+        margin: 10px;
+        width: 80%;
+        height: 20%;
+
+    }
+
+
+
+}

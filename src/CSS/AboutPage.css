@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300;400&display=swap');
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+.custom-margin {
+	padding-top: 60px;
+}
+
+.title {
+	font-weight: 700;
+	color: #237e8a;
+}
+
+.abt-img img {
+	--edge-size: 1.5em;
+	float: right;
+	max-width: 75%;
+	z-index: 9999;
+	margin-right: 15%;
+	isolation: isolate;
+	display: inline-grid;
+	place-content: center;
+	clip-path: polygon(
+		var(--edge-size) 0%,
+		100% 0,
+		100% calc(100% - var(--edge-size)),
+		calc(100% - var(--edge-size)) 100%,
+		0 100%,
+		0% var(--edge-size)
+	);
+	transition: color 250ms;
+}
+.abt-desc {
+	margin: 35px 0;
+}
+.abt-desc p {
+	margin-top: 15px;
+}
+
+.abt-vid {
+	margin-top: 25px;
+	width: 100%;
+}
+
+.video {
+	width: 100% !important;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	color: #fff;
+}
+
+.custom-margin2 {
+	padding-bottom: 40px;
+	margin-top: 60px;
+}
+
+.about {
+	background-image: url('../resources/images/djsceBldg.jpg');
+	background-size: 100%;
+}
+
+@media only screen and (max-width: 1310px) {
+	.about-page {
+		margin-top: 80px;
+	}
+	.principal-img {
+		width: 60%;
+	}
+	.principal-text {
+		width: 90%;
+		padding: 0px;
+		order: 1;
+	}
+}

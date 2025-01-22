@@ -1,0 +1,49 @@
+.cultural-page {
+    background-image: url('../images/12.png');
+}
+
+.culturalMsg{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:xx-large;
+
+}
+
+.culturalPage{
+    background-image: url('../../public/cs2.png');
+    background-color: black;
+    
+    padding-top: 5%;
+    background-repeat: no-repeat;
+    background-position: center 8vh;
+    background-size:contain;
+    padding-top: 5%;
+    border: 1px black;
+    /* width: 100%; */
+    margin: auto;
+}
+
+.culturalHeading{
+    color: rgb(166, 57, 57);
+    text-align: center;
+    /* padding-top: 1%; */
+    margin-top: -5%;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: xx-large;
+}
+
+@media only screen and (max-width:600px) {
+    .culturalPage{
+        /* height: 60vh; */
+        background-image: url('../../public/cs2.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+        align-items: center;
+        margin-left: -10%;
+        width: 115%;
+    }   
+} 
+

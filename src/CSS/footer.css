@@ -1,0 +1,127 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-box {
+    width: 100%;
+    padding: 60px 0px;
+    background: black;
+    position: absolute;
+    /* bottom: 0; */
+}
+
+.footerContainer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.footerRow {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    grid-gap: 25px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* margin-left: 60px; */
+    width: 90%;
+}
+
+.socialsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.socialsList .footerLinks {
+    padding: 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.507);
+    border-radius: 50%;
+    transform: scale(0.8);
+}
+
+.heading {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footerDesc, 
+.footerDesc * {
+    color: rgba(255, 255, 255, 0.507);
+}
+
+.footerLinks {
+    display: inline-block;
+
+    color: rgba(255, 255, 255, 0.507);
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-decoration: none;
+
+    line-height: 1rem;
+}
+
+.footerLinks :hover {
+    color: dodgerblue !important;
+}
+
+#eventsDropDown {
+    background: none;
+    border: none;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.507);
+}
+
+#dropDownItem {
+    color: rgba(255, 255, 255, 0.507);
+}
+
+@media only screen and (max-width: 1550px) {
+    .footerContainer {
+        width: 90%;
+    }
+    .footerRow {
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    .footerRow {
+        grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .footerContainer {
+        width: 95%;
+    }
+    .footer-box * {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 514px) {
+    .footer-links {
+        display: table-column !important;
+        flex-wrap: wrap;
+    }
+    .footer-links > a,
+    .footer-links > div {
+        width: 40%;
+    }
+    .column {
+        width: 95%;
+        display: flex;
+        align-items: center;
+    }
+}

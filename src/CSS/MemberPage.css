@@ -1,0 +1,137 @@
+:root {
+    --themeColor: rgb(161, 159, 41);
+}
+
+.members-page-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-image: url("../resources/images/members_page_background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    overflow-x: hidden;
+
+}
+
+.members-page-container h3 {
+    color: #98962a;
+    margin-top: 1rem;
+}
+
+.option-container {
+    margin: auto;
+    width: max-content;
+    padding: 20px;
+}
+
+.core-btn {
+    color: white;
+    padding: 0.5rem 1rem;
+    background: rgba(124, 122, 40, 0.8);
+    border-radius: 10px;
+    margin-right: 10px;
+    border: none;
+    z-index: 5;
+    transition: all ease-in 0.2s;
+}
+
+
+.Co-Comm-btn {
+    color: white;
+    padding: 0.5rem 1rem;
+    background: rgba(124, 122, 40, 0.8);
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+    z-index: 5;
+    transition: all ease-in 0.2s;
+}
+
+.core-btn:hover,
+.Co-Comm-btn:hover {
+    background-color: rgba(86, 85, 28, 0.6);
+
+}
+
+.btn-onclick-effects {
+    color: transparent;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+}
+
+.heading-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #98962a;
+}
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.core-card {
+
+    margin: 0.5rem 1.5rem;
+    color: var(--themeColor);
+    overflow: hidden;
+}
+
+.core-card img {
+    position: relative;
+    border-radius: 10px;
+    height: 14rem;
+    width: 13rem;
+    transform: scale(1);
+    object-fit: cover;
+    bottom: 20px;
+}
+
+.co-comm-card {
+    display: flex;
+    margin: auto;
+    color: var(--themeColor);
+
+}
+
+.member-card-img {
+    height: 20rem;
+    width: 40rem;
+    margin-bottom: 1rem;
+    margin-top: -10px;
+    border-radius: 10px;
+    border: inset 5px var(--themeColor);
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .core-card {
+
+        margin: 2rem;
+        color: var(--themeColor);
+        overflow: hidden;
+    }
+
+    .core-card img {
+        position: relative;
+        border-radius: 10px;
+        height: 14rem;
+        width: 12rem;
+        transform: scale(1.2);
+        object-fit: cover;
+        bottom: 20px;
+    }
+
+    .member-card-img {
+        height: 10rem;
+        width: 95vw;
+
+    }
+}

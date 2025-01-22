@@ -1,0 +1,162 @@
+:root {
+	--platinum: silver;
+	--gold: gold;
+	--silver: rgba(192, 192, 192, 0.6);
+	--bronze: rgba(205, 127, 50, 1);
+}
+
+.sponsers-page-container {
+	padding-top: 80px;
+	position: relative;
+	min-width: 100vw;
+	min-height: 100vh;
+	text-align: center;
+	background-image: url('../resources/images/sponsersPageBackgroundImg.png');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+}
+
+/* .sponsersLevelContainer {
+    background-color: transparent;
+    left: 100px;
+    width: 2rem;
+    position: fixed;
+    height: max-content;
+
+
+} */
+
+.level-btn {
+	right: -30px;
+	color: rgb(27, 26, 26);
+	width: 4rem;
+	height: 3rem;
+	border: none;
+	transform: rotate(-90deg);
+	border-radius: 15px 15px 0px 0px;
+	font-size: 0.7rem;
+	font-weight: bold;
+	position: fixed;
+	padding: 0 5px 10px 5px;
+}
+
+.level-btn:nth-child(1) {
+	top: 6rem;
+	background-color: var(--platinum);
+}
+
+.level-btn:nth-child(2) {
+	top: 10rem;
+	background-color: var(--gold);
+}
+
+.level-btn:nth-child(3) {
+	top: 14rem;
+	background-color: var(--silver);
+}
+
+.level-btn:nth-child(4) {
+	top: 18rem;
+	background-color: var(--bronze);
+}
+
+.PLATINUM-txt {
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 3rem;
+	color: var(--platinum);
+}
+
+.GOLD-txt {
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 3rem;
+	color: var(--gold);
+}
+
+.SILVER-txt {
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 3rem;
+	color: var(--silver);
+}
+
+.BRONZE-txt {
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 3rem;
+	color: var(--bronze);
+}
+
+.sponser-cards {
+	width: 25rem;
+	border-radius: 2px;
+	border: 4px solid rgb(138, 136, 35);
+	margin: 1rem 3rem 1rem 1rem;
+	color: rgb(138, 136, 35);
+}
+
+.sponser-cards img {
+	height: 15rem;
+}
+
+.PLATINUMCardstyle {
+	color: var(--platinum);
+}
+
+.PLATINUMCardstyle a {
+	border: 5px solid var(--platinum);
+	color: var(--platinum);
+	font-weight: bold;
+}
+
+.PLATINUMCardstyle a:hover {
+	background-color: var(--platinum);
+	color: black;
+}
+
+.GOLDCardstyle {
+	color: var(--gold);
+}
+
+.GOLDCardstyle a {
+	border: 5px solid gold;
+	color: var(--gold);
+	font-weight: bold;
+}
+
+.GOLDCardstyle a:hover {
+	background-color: var(--gold);
+	color: black;
+}
+
+.SILVERCardstyle {
+	color: var(--silver);
+}
+
+.SILVERCardstyle a {
+	border: 5px solid var(--silver);
+	color: var(--silver);
+	font-weight: bold;
+}
+
+.SILVERCardstyle a:hover {
+	background-color: var(--silver);
+	color: black;
+}
+
+.BRONZECardstyle {
+	color: var(--bronze);
+}
+
+.BRONZECardstyle a {
+	border: 5px solid var(--bronze);
+	color: var(--bronze);
+	font-weight: bold;
+}
+
+.BRONZECardstyle a:hover {
+	background-color: var(--bronze);
+	color: black;
+}
