@@ -14,6 +14,9 @@
     text-align: center;
     margin: 2rem 0;
   }
+  p{
+    color: white;
+  }
 
   h5{
     /* font-size: 2.5rem; */

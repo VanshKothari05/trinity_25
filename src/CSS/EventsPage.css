@@ -17,6 +17,28 @@
     align-items: center;
 
 }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+.no-decoration {
+    text-decoration: none;
+  }
+  
+  .no-decoration h3 {
+    text-decoration: none;
+    color: black;
+  }
+  
+
+
+  
+
 
 .events-page-container h1 {
     color: var(--themeColor);
